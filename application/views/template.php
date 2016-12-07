@@ -15,13 +15,7 @@
 </div>
 <div id="container">
 	<div id="navigation">
-		<ul>
-			<li><a href="/" {dActive}>Dashboard</a></li>
-			<li><a href="/admin" {aActive}>Administration</a></li>
-			<li><a href="/receiving" {rActive}>Receiving</a></li>
-			<li><a href="/production" {pActive}>Production</a></li>
-			<li><a href="/sales" {sActive}>Sales</a></li>
-		</ul>
+	
 	</div>
 	{content}
 </div>
