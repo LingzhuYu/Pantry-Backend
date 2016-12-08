@@ -10,7 +10,7 @@ if (!defined('BASEPATH'))
  * @copyright           Copyright (c) 2010-2014, James L. Parry
  * ------------------------------------------------------------------------
  */
-interface Active_record {
+interface Data_mapper {
 //---------------------------------------------------------------------------
 //  Utility methods
 //---------------------------------------------------------------------------
@@ -136,7 +136,7 @@ interface Active_record {
  * @copyright           Copyright (c) 2010-2014, James L. Parry
  * ------------------------------------------------------------------------
  */
-class MY_Model extends CI_Model implements Active_Record {
+class MY_Model extends CI_Model implements Data_mapper {
 
 	protected $_tableName;   // Which table is this a model for?
 	protected $_keyField; // name of the primary key field

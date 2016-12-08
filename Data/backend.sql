@@ -36,8 +36,8 @@ CREATE TABLE `ci_sessions` (
 -- Table structure for table `Material`
 --
 
-DROP TABLE IF EXISTS `Material`;
-CREATE TABLE `Material` (
+DROP TABLE IF EXISTS `Materials`;
+CREATE TABLE `Materials` (
   `id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL,
   `price` decimal(10,2) NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE `Material` (
 -- Dumping data for table `Material`
 --
 
-INSERT INTO `Material` (`id`, `name`,`price`, `itemPerCase`, `amount`) VALUES
+INSERT INTO `Materials` (`id`, `name`,`price`, `itemPerCase`, `amount`) VALUES
 (1, 'empty bottle', '100.00', 12, 36),
 (2, 'red herb', '150.00', 6, 15),
 (3, 'blue herb', '150.00', 6, 14),
@@ -73,5 +73,5 @@ ALTER TABLE `ci_sessions`
 --
 -- Indexes for table `Material`
 --
-ALTER TABLE `Material`
+ALTER TABLE `Materials`
   ADD PRIMARY KEY (`id`);
