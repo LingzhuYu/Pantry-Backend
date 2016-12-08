@@ -66,7 +66,7 @@ class Material_list extends Rest_Controller {
 	{
 		// decode record before anything, as assoc array
 		$record = json_decode($this->post(),true);
-
+		//var_dump($record);
 		// item ID specified as segment or query parameter
 		if (($key == null) || ($key == 'id'))
 		{
@@ -110,7 +110,7 @@ class Material_list extends Rest_Controller {
 	// Handle an incoming PUT - update a new materials item, ID in payload
 	function index_put()
 	{
-		$this->crud_put($this->post());
+		$this->crud_put($this->put());
 	}
 
 	// Handle an incoming PUT - update a new materials item - ID in URL
@@ -120,12 +120,14 @@ class Material_list extends Rest_Controller {
 
 		// decode record before anything, as assoc array
 		$record = json_decode($incoming,true);
-		
+		//var_dump($record);
 		// item ID specified as segment or query parameter
 		if (($key == null) || ($key == 'id'))
 		{
 			$key = $this->get('id');
+			//var_dump($key);
 			$record = array_merge(array('id' => $key), $record);
+			//var_dump($record);
 		}
 
 		$this->crud_put($record);
