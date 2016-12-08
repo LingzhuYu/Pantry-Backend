@@ -13,18 +13,10 @@ class Dashboard extends Application
     public function index()
     {
         // This is the view we want shown
-        $this->data['pagebody'] = 'dashboard';
-
-        $this->data['materials_cost'] = $this->calc_value('Materials');
-
-        $this->data['recipes_cost'] = $this->calc_products_cost();
-
-        $this->data['revenue'] = $this->calc_value('Products');
-
-        $this->data['products_stocked'] = $this->num_items('Products');
-
-        $this->data['recipes_count'] = $this->num_items('Recipes');
-
+        $result = 'These are not the droids you are looking for!';
+		$this->data['pagebody'] = '';
+		$this->data['title'] = "Jim's Diner Backend";
+		$this->data['content'] = $result;
         $this->render();
 
     }
