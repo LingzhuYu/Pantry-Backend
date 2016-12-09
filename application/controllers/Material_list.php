@@ -64,8 +64,9 @@ class Material_list extends Rest_Controller {
 	// Handle an incoming POST - add a new materials item - ID in URL
 	function item_post($key = null)
 	{
+		$incoming = key($this->post());
 		// decode record before anything, as assoc array
-		$record = json_decode($this->post(),true);
+		$record = json_decode($incoming,true);
 		//var_dump($record);
 		// item ID specified as segment or query parameter
 		if (($key == null) || ($key == 'id'))

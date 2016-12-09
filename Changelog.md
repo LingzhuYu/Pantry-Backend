@@ -21,3 +21,4 @@ Members: Matthew, Dennis, Injo, Haram, Lydia
 
 2016-12-08 13:01 - Haram
 -Change a minor typo for put method to work.
+-Changed the post method to take in object and decode the json object.
