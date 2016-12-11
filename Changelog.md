@@ -7,6 +7,7 @@ Members: Matthew, Dennis, Injo, Haram, Lydia
 -Removed every class but dashboard and material_list class to clean out the backend project.
 -Removed every view but the main page because they are unused, and cleaned out the nagivation bar from the main page.
 -Removed all the unused model, only kept Material Model.
+-Changed the content in the main page.
 
 2016-12-08 13:01 - Haram
 -Changed the material model to work with rest api controller.
