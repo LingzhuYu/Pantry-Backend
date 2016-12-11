@@ -14,19 +14,12 @@
 	</ul>
 </div>
 <div id="container">
-	<div id="navigation">
-		<ul>
-			<li><a href="/" {dActive}>Dashboard</a></li>
-			<li><a href="/admin" {aActive}>Administration</a></li>
-			<li><a href="/receiving" {rActive}>Receiving</a></li>
-			<li><a href="/production" {pActive}>Production</a></li>
-			<li><a href="/sales" {sActive}>Sales</a></li>
-                        <li><a href="/toggle">Toggle Role</a></li>
-                        <li><center>Role : {userrole}</center></li>
-		</ul>
-	</div>
-	{content}
+	<ul>
+		{content}
+	</ul>
+
 </div>
+
 <footer>
 	<!-- <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds.{ci_version}</p> -->
 </footer>

@@ -3,6 +3,11 @@
 ============================================
 Members: Matthew, Dennis, Injo, Haram, Lydia
 
+2016-12-11 12:06 - Haram
+-Removed every class but dashboard and material_list class to clean out the backend project.
+-Removed every view but the main page because they are unused, and cleaned out the nagivation bar from the main page.
+-Removed all the unused model, only kept Material Model.
+
 2016-12-08 13:01 - Haram
 - Changed the material model to work with rest api controller.
 - Change a minor typo for put method to work.
