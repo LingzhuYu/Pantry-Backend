@@ -3,6 +3,9 @@
 ============================================
 Members: Matthew, Dennis, Injo, Haram, Lydia
 
+2016-12-11 16:25 - Lydia
+- Added a default database config file
+
 2016-12-11 12:06 - Haram
 -Removed every class but dashboard and material_list class to clean out the backend project.
 -Removed every view but the main page because they are unused, and cleaned out the nagivation bar from the main page.
